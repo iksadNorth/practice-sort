@@ -1,8 +1,11 @@
-package me.iksadnorth;
+package me.iksadnorth.practicesort;
+
+import org.springframework.stereotype.Component;
 
 /**
  * 배열을 반으로 쪼개가며, 1개짜리들로 조각낸 뒤, 다시 2개씩 합치면서 정렬하는 방법.<br>
  */
+@Component
 public class MergeSort implements Sort<Integer> {
     @Override
     public void sort(Integer[] array) {

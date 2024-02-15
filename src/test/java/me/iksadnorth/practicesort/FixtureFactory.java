@@ -1,3 +1,6 @@
+package me.iksadnorth.practicesort;
+
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -8,13 +11,12 @@ public class FixtureFactory {
     private FixtureFactory() {}
 
     public static Integer[] getArrayFixture(Integer length) {
-        if (table.containsKey(length)) {
-            return table.get(length);
-        } else {
+        if (!table.containsKey(length)) {
             Integer[] fixture = makeArrayFixture(length);
             table.put(length, fixture);
-            return fixture;
         }
+        Integer[] answer = table.get(length);
+        return Arrays.copyOf(answer, answer.length);
     }
 
     private static Integer[] makeArrayFixture(Integer length) {

@@ -1,4 +1,4 @@
-package me.iksadnorth;
+package me.iksadnorth.practicesort;
 
 public class SortUtil {
     private SortUtil() {}

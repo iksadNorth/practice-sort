@@ -1,8 +1,11 @@
-package me.iksadnorth;
+package me.iksadnorth.practicesort;
+
+import org.springframework.stereotype.Component;
 
 /**
  * 배열의 모든 요소를 힙 정렬 시킨 후, 차례차례 Pop 시켜서 정렬.<br>
  */
+@Component
 public class HeapSort implements Sort<Integer> {
     @Override
     public void sort(Integer[] array) {

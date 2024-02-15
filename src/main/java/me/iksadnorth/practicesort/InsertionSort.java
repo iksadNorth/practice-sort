@@ -1,9 +1,12 @@
-package me.iksadnorth;
+package me.iksadnorth.practicesort;
+
+import org.springframework.stereotype.Component;
 
 /**
  * 앞 요소들을 1개씩 정렬해나가며 새로 정렬할 요소가 위치할 위치를 찾아가는 정렬.<br>
  * 약간 카드뭉치를 손에 들고 있을 때, 정렬하는 알고리즘이라고 봐도 무방하다.<br>
  */
+@Component
 public class InsertionSort implements Sort<Integer> {
     @Override
     public void sort(Integer[] array) {

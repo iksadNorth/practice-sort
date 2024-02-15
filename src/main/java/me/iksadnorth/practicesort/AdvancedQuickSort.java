@@ -1,10 +1,13 @@
-package me.iksadnorth;
+package me.iksadnorth.practicesort;
+
+import org.springframework.stereotype.Component;
 
 /**
  * 배열을 반으로 쪼개가며, 정렬하는 방법.<br>
  * 대상 배열 중 1개의 요소를 기준으로 해당 요소보다 크면 오른쪽, 작으면 왼쪽으로 swap한다.<br>
  * 해당 알고리즘은 피벗값을 어찌 설정하느냐에 따라 성능이 달라진다.
  */
+@Component
 public class AdvancedQuickSort extends QuickSort {
     @Override
     protected int partition(Integer[] array, int idxStart, int idxEnd) {

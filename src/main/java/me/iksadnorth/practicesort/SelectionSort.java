@@ -1,8 +1,11 @@
-package me.iksadnorth;
+package me.iksadnorth.practicesort;
+
+import org.springframework.stereotype.Component;
 
 /**
  * 정렬되지 않은 요소들 중 최솟값 혹은 최댓값을 찾아서 Swap하는 정렬.<br>
  */
+@Component
 public class SelectionSort implements Sort<Integer> {
     @Override
     public void sort(Integer[] array) {

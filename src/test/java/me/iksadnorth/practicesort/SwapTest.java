@@ -1,4 +1,5 @@
-import me.iksadnorth.SortUtil;
+package me.iksadnorth.practicesort;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
