@@ -1,7 +1,4 @@
-import me.iksadnorth.BubbleSort;
-import me.iksadnorth.InsertionSort;
-import me.iksadnorth.SelectionSort;
-import me.iksadnorth.Sort;
+import me.iksadnorth.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -64,6 +61,16 @@ public class IntegerSortTest {
     void insertionSortTest() {
         // given
         Sort<Integer> sort = new InsertionSort();
+
+        // when & then
+        sortTest(sort);
+        estimateRunTime_sortTest(sort);
+    }
+
+    @Test
+    void quickSortTest() {
+        // given
+        Sort<Integer> sort = new AdvancedQuickSort();
 
         // when & then
         sortTest(sort);
