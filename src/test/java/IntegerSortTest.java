@@ -22,8 +22,8 @@ public class IntegerSortTest {
 
     void estimateRunTime_sortTest(Sort<Integer> method) {
         // given
-        Integer[] array = {25, 1, 305, 21, 17, 94, 1042, 5, 25, 1, 305, 21, 17, 94, 1042, 5, 25, 1, 305, 21, 17, 94, 1042, 5};
-        int loops = 1000000;
+        Integer[] array = FixtureFactory.getArrayFixture(100000);
+        int loops = 1;
 
         // when
         long start = System.currentTimeMillis();
@@ -71,6 +71,16 @@ public class IntegerSortTest {
     void quickSortTest() {
         // given
         Sort<Integer> sort = new AdvancedQuickSort();
+
+        // when & then
+        sortTest(sort);
+        estimateRunTime_sortTest(sort);
+    }
+
+    @Test
+    void mergeSortTest() {
+        // given
+        Sort<Integer> sort = new MergeSort();
 
         // when & then
         sortTest(sort);
