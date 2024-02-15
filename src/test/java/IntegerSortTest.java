@@ -1,3 +1,4 @@
+import me.iksadnorth.BubbleSort;
 import me.iksadnorth.Sort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -35,5 +36,15 @@ public class IntegerSortTest {
         // then
         String log = String.format("소요 시간 : %d ms", gap);
         System.out.println(log);
+    }
+
+    @Test
+    void bubbleSortTest() {
+        // given
+        Sort<Integer> sort = new BubbleSort();
+
+        // when & then
+        sortTest(sort);
+        estimateRunTime_sortTest(sort);
     }
 }
