@@ -17,7 +17,7 @@ public class InsertionSort implements Sort<Integer> {
             // 만약 target과 비교했을때, 크다면 빈칸으로 밀어넣기.
             int j;
             for (j = i; j > 0; j--) {
-                if (target > array[j-1]) break;
+                if (target >= array[j-1]) break;
                 SortUtil.swap(array, j-1, j);
             }
 
