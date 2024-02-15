@@ -86,4 +86,14 @@ public class IntegerSortTest {
         sortTest(sort);
         estimateRunTime_sortTest(sort);
     }
+
+    @Test
+    void heapSortTest() {
+        // given
+        Sort<Integer> sort = new HeapSort();
+
+        // when & then
+        sortTest(sort);
+        estimateRunTime_sortTest(sort);
+    }
 }
